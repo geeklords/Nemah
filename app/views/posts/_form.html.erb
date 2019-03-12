@@ -5,31 +5,26 @@
 
 
   <% end %>
-  
-
-  <div class="field">
-    <%= form.label :title %>
-    <%= form.text_field :title %>
-  </div>
-
-
-  <div class="field">
-    <%= form.label :type_of_food %>
-    <%= form.text_field :type_of_food %>
-  </div>
-
-  <div class="field">
-    <%= form.label :amount %>
-    <%= form.number_field :amount %>
-  </div>
-
-
-  <div class="field">
-    <%= form.label :description %>
-    <%= form.text_area :description %>
-  </div>
-
+  <div class="container">
+   <div class="form-group">
+     <%= form.label :title %>
+     <%= form.text_field :title ,:class => "form-control"%>
+    </div>
+    <div class="form-group">
+      <%= form.label :type_of_food %>
+      <%= form.text_field :type_of_food ,:class => "form-control" %>
+    </div>
+       <div class="form-group">
+       <%= form.label :amount %>
+       <%= form.number_field :amount , class: "form-control"%>
+       </div>
+       <div class="form-group">
+          <%= form.label :description %>
+          <%= form.text_area :description, class: "form-control" %>
+</div>
   <div class="actions">
-    <%= form.submit %>
+    <%= link_to 'Back', posts_path, class: "btn btn-outline-secondary" %>
+    <%= form.submit "Save", data: { confirm: 'You Added A Post' },class: "btn btn-outline-success"%>
+  </div>
   </div>
 <% end %>

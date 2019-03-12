@@ -56,12 +56,12 @@ div {
   display: table;
 }
 
-#error_explanation {
+#error {
   width: 450px;
-  border: 2px solid red;
-  padding: 7px 7px 0;
-  margin-bottom: 20px;
-  background-color: #f0f0f0;
+  // border: 2px solid red;
+  // padding: 7px 7px 0;
+  // margin-bottom: 20px;
+  // background-color: #f0f0f0;
 
   h2 {
     text-align: left;
@@ -73,10 +73,10 @@ div {
     color: #fff;
   }
 
-  ul li {
-    font-size: 12px;
-    list-style: square;
-  }
+  // ul li {
+  //   font-size: 12px;
+  //   list-style: square;
+  // }
 }
 
 label {

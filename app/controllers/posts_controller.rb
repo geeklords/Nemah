@@ -5,6 +5,7 @@ class PostsController < ApplicationController
   # GET /posts.json
   def index
     @posts = Post.all
+    @user = User.all
   end
 
   # GET /posts/1
@@ -54,12 +55,16 @@ class PostsController < ApplicationController
   # DELETE /posts/1
   # DELETE /posts/1.json
   def destroy
+    if @post.user_id == current_user.id
     @post.destroy
     respond_to do |format|
       format.html { redirect_to posts_url, notice: 'Post was successfully destroyed.' }
       format.json { head :no_content }
     end
+  else
+    redirect_to posts_path, notice: 'You are not allowed'
   end
+end
 
   private
     # Use callbacks to share common setup or constraints between actions.

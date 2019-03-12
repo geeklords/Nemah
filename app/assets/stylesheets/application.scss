@@ -1,7 +1,6 @@
 
-
 @import "bootstrap";
-
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans');
 
 .intro-2 {
     background: url("https://mdbootstrap.com/img/Photos/Others/img (50).jpg")no-repeat center center;
@@ -37,6 +36,58 @@ header,
   background-image: linear-gradient(to right, #c4e17f, #c4e17f 12.5%, #f7fdca 12.5%, #f7fdca 25%, #fecf71 25%, #fecf71 37.5%, #f0776c 37.5%, #f0776c 50%, #db9dbe 50%, #db9dbe 62.5%, #c49cde 62.5%, #c49cde 75%, #669ae1 75%, #669ae1 87.5%, #62c2e4 87.5%, #62c2e4);
 }
 
+
 .card{
     height: 200px
 }
+.container{
+    width: 400px;
+    margin: 0 auto; 
+   
+}
+
+*{
+    font-family: 'Noto Sans', sans-serif;
+    
+}
+body{
+    background: linear-gradient(90deg, #efffe5, #efffe5);
+
+}
+h1{
+    text-align: center;
+    padding: 10px;
+}
+
+.form{    margin-top: 0px;
+    padding: 12px;
+    background-color: white;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+    border-radius: 5px 5px 10px 10px;
+    position: relative;
+    margin-top: 26%;
+    margin-bottom: 15%;
+	
+}
+
+.avatar-wrapper {
+    background-color: #ffffff;
+    width: 119px;
+    height: 120px;
+    position: absolute;
+    top: -53px;
+    left: 32.5%;
+    border-radius: 50%;
+  
+}
+
+.avatar {
+    width: 88px;
+    height: 89px;
+    position: absolute;
+    top: 6px;
+    left: 10%;
+
+}
+
+

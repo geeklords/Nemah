@@ -1,7 +1,7 @@
 class Post < ApplicationRecord
 belongs_to :user
 
-validates :title, :type_of_food, :amount, :description, presence: true
+validates :title, :type_of_food, :description, presence: true
 validates :amount, presence: true, :numericality => { :greater_than => 0 } 
 
 

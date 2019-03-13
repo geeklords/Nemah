@@ -18,7 +18,7 @@ ActiveRecord::Schema.define(version: 2019_03_11_151440) do
   create_table "posts", force: :cascade do |t|
     t.string "title"
     t.string "type_of_food"
-    t.integer "amount"
+    t.integer "amount", default: 0
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.bigint "user_id"
@@ -27,7 +27,7 @@ ActiveRecord::Schema.define(version: 2019_03_11_151440) do
   end
 
   create_table "reservations", force: :cascade do |t|
-    t.integer "amount"
+    t.integer "amount", default: 0
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.bigint "user_id"

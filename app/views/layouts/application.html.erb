@@ -34,7 +34,12 @@
   
     <ul class="navbar-nav mr-auto">
       <li class="nav-item active">
-        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+        <%= link_to "HOME", root_path, :class => "nav-link"%> <span class="sr-only">(current)</span></a>
+        <%
+=begin%>
+ <a class="nav-link" href="#">Home  
+<%
+=end%>
       </li>
       <li class="nav-item">
         <a class="nav-link" href="#">About Us</a>
@@ -46,18 +51,38 @@
 </nav>
     </div>
   </div>
+
+
+<div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <%= image_tag "banner.svg", :class => "img-fluid"%>
+    </div>
+  </div>
 </div>
-
-
-
-
+</div>
 
 
     <%= yield %>
 
+ <div class="mini-footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="copyright-text">
+            <p>© 2019
+              . All rights reserved. Created by
+              <a href="#">GeekLords</a>
+            </p>
+          </div>
 
-
-
+          <div class="go_top">
+            <span class="icon-arrow-up"></span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 
   </body>
 </html>

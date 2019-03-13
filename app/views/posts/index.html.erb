@@ -95,14 +95,14 @@
                   <p class="card-text p-y-1"><%= post.description %></p>
                   <%= link_to 'Show', post, class: "card-link" %>
                   <%= link_to 'Destroy', post, method: :delete, data: { confirm: 'Are you sure?' } , class: "card-link" %>
+                  <%= link_to 'New Post', new_post_path %>
               </div>
           </div>
       </div>
-
+       </div>
+    </div>
+    <br>
       <% end %>
 
-    </div>
-
-<%= link_to 'New Post', new_post_path %>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js"></script>
 <script src="https://pingendo.com/assets/bootstrap/bootstrap-4.0.0-alpha.6.min.js"></script>

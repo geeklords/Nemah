@@ -8,7 +8,7 @@ class User < ApplicationRecord
 
   validates :name, presence: true 
   validates :name, length: { minimum: 2,
-   too_short: "must at least have %{count} letters" }
+   too_short: "Must have at least %{count} characters " }
    
 
 end

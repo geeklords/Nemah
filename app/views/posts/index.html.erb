@@ -1,4 +1,4 @@
-<p id="notice"><%= notice %></p>
+
 
 <h1>Posts</h1>
 
@@ -21,7 +21,9 @@
 
                   <% if current_user.id == post.user_id%>
                   <%= link_to 'Destroy', post, method: :delete, data: { confirm: 'Are you sure?' } , class: "card-link" %>
+
                   <% end %>
+
 
 
               </div>

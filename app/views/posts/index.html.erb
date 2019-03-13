@@ -1,85 +1,7 @@
 <p id="notice"><%= notice %></p>
 
 <h1>Posts</h1>
-<!-- ---------- 
-<table>
-  <thead>
-    <tr>
-      <th>Company</th>
-      <th>Title</th>
-      <th>Type of food</th>
-      <th>Amount</th>
-      <th>Description</th>
-      <th colspan="3"></th>
-    </tr>
-  </thead>
 
-
-  <tbody>
-    <% @posts.each do |post| %>
-    <% user_name = @user.find(post.user_id) %>
-      <tr>
-        <td><%= user_name.name %></td>
-        <td><%= post.title %></td>
-        <td><%= post.type_of_food %></td>
-        <td><%= post.amount %></td>
-        <td><%= post.description %></td>
-        <td><%= link_to 'Show', post %></td>
-        <td><%= link_to 'Edit', edit_post_path(post) %></td>
-        <td><%= link_to 'Destroy', post, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-      </tr>
-
-      </div>
-</div>
-
-    <% end %>
-  </tbody>
-</table>
-<br>
-
-  
-  
-   <div class="py-5">
-    <div class="container">
-      <div class="row hidden-md-up">
-      <% @posts.each do |post| %>
-        <div class="col-md-4">
-          <div class="card">
-            <div class="card-block">
-              <h4 class="card-title"><%= post.title %></h4>
-              <h6 class="card-subtitle text-muted">Type of food: <%= post.type_of_food %></h6>
-              <p class="card-text p-y-1"><%= post.description %></p>
-              <a href="#" class="card-link">link</a>
-              <a href="#" class="card-link">Second link</a>
-            </div>
-          </div>
-        </div>
-        <% end %>
-      </div>
-    </div>
-    </div>
--->
-  <!-- 
-<div class="py-5">
-    <div class="container">
-        <div class="row hidden-md-up">
-            <% @posts.each do |post| %>
-            <div class="col-md-4">
-                <div class="card">
-                    <div class="card-block">
-                        <h4 class="card-title"><%= post.title %></h4>
-                        <h6 class="card-subtitle text-muted">Type of food: <%= post.type_of_food %></h6>
-                        <p class="card-text p-y-1"><%= post.description %></p>
-                        <a href="#" class="card-link">link</a>
-                        <a href="#" class="card-link">Second link</a>
-                    </div>
-                </div>
-            </div>
-            <% end %>
-        </div>
-    </div>
-</div>
----------- -->
 
 
   <div class="container">
@@ -88,20 +10,26 @@
       <% user_name = @user.find(post.user_id) %>
       <div class="col-md-4 mt-2">
           <div class="card">
-              <div class="card-block p-5">
+              <div class="card-block p-3">
                   <h4 class="card-title"><%= post.title %></h4>
                   <h6 class="card-subtitle text-muted">Type of food: <%= post.type_of_food %></h6>
-                  <h6 class="card-subtitle text-muted">Email: <%= user_name.email %></h6>
+                  <h6 class="card-title text-muted">Amount: <%= post.amount %></h6>
+                  <h6 class="card-title text-muted">Name: <%= user_name.name %></h6>
                   <p class="card-text p-y-1"><%= post.description %></p>
                   <%= link_to 'Show', post, class: "card-link" %>
+
+
+                  <% if current_user.id == post.user_id%>
                   <%= link_to 'Destroy', post, method: :delete, data: { confirm: 'Are you sure?' } , class: "card-link" %>
+                  <% end %>
+
+
               </div>
           </div>
       </div>
-
       <% end %>
-
     </div>
+  </div>
 
 <%= link_to 'New Post', new_post_path %>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js"></script>

@@ -1,7 +1,7 @@
 <%= form_with(model: post, local: true) do |form| %>
   <% if post.errors.any? %>
     <div id="error">
-      <h2><%= pluralize(post.errors.count, "error") %>, Post can't be saved </h2>
+      <% pluralize(post.errors.count, "error") %>
   <% end %>
   <div class="wrapper">
    <div class="container mycontainer">
@@ -29,9 +29,8 @@
       </div>
       <div class="actions">
         <%= link_to 'Back', posts_path, class: "btn btn-outline-secondary" %>
-        <%= form.submit "Save", data: { confirm: 'You Added A Post' },class: "btn btn-outline-success"%>
-     </div>
-
+        <%= form.submit "Save",class: "btn btn-outline-success"%>
+      </div>
 <% end %>
   </div>
     </div>

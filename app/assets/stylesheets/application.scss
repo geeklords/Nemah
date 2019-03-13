@@ -90,11 +90,9 @@ h1{
 
 }
 
-<<<<<<< HEAD
 .card{
     height: 200px
 }
-=======
 .mini-footer {
     background: #2B412C;
     text-align:center;
@@ -112,6 +110,6 @@ h1{
    .mini-footer p a:hover {
     color:#34bfa3
    }
-
-
->>>>>>> Finished all the CSS, Added a Fancy banner and a footer, okay guys good night
+   .validation-error{
+    color:red;
+  }

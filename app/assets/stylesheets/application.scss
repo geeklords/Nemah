@@ -102,8 +102,13 @@ h1{
 }
 .mini-footer {
     background: #2B412C;
-    text-align:center;
-    padding:32px 0
+    padding:15px 0;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+
    }
    .mini-footer p {
     margin:0;
@@ -120,3 +125,4 @@ h1{
    .validation-error{
     color:red;
   }
+ 

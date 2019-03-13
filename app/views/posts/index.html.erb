@@ -1,6 +1,6 @@
 
 
-<h1>Posts</h1>
+<h1>POSTS</h1>
 
 
 
@@ -9,8 +9,8 @@
       <% @posts.each_with_index do |post, index| %>
       <% user_name = @user.find(post.user_id) %>
       <div class="col-md-4 mt-2">
-          <div class="card">
-              <div class="card-block p-3">
+          <div class="">
+              <div class="design paper-raise">
                   <h4 class="card-title"><%= post.title %></h4>
                   <h6 class="card-subtitle text-muted">Type of food: <%= post.type_of_food %></h6>
                   <h6 class="card-title text-muted">Amount: <%= post.amount %></h6>
@@ -23,7 +23,7 @@
                   <%= link_to 'Destroy', post, method: :delete, data: { confirm: 'Are you sure?' } , class: "card-link" %>
 
                   <% end %>
-
+                
 
 
               </div>

@@ -1,0 +1,7 @@
+
+<% @reserve.each do |r| %>
+    <%= @post_title.find(r.post_id).title %>
+<p>Post ID: <%= r.post_id %> </p>
+<p>User ID: <%= r.user_id %> </p>
+<p>Amount: <%= r.amount %> </p>
+<% end %>

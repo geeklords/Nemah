@@ -121,10 +121,110 @@ h1{
    .mini-footer p a:hover {
     color:#34bfa3
    }
+
+.body_about_us{
+    background-color: white;
+}
+.header_about_us{
+    background-color: #c02f2f;
+    height: 100%;
+}
+.First_text{
+    color: white;
+    font-family: 'Roboto Slab', serif;
+    font-size: 14px;
+    position: absolute;
+    top: 210%;
+    background-color: #292826;
+    left: 51%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    border: 54px solid #292826;
+    border-radius: 86px;
+}
+.hr_aboutUs{
+  background-color: #c72941;
+  width: 75px;
+}
+
+.image_about_us{
+    width: 1279px;
+    height: 740px;
+}
+
+.text_whatWeDo{
+    background-color: white;
+    text-align: center;
+    font-family: 'Lora', serif;
+}
+
+.text_theBasic{
+    background-color: white;
+    text-align: center;
+    color: #dc4545;
+    font-size: 50px;
+    font-family: 'Lora', serif;
+}
+
+.pargaph_basicIdea{
+    background-color: white;
+    text-align: center;
+    font-size: 14px;
+    margin: 5px 378px 5px 378px;
+    font-family: 'Lora', serif;
+}
+.text_OurTeam{
+     background-color: white;
+    text-align: center;
+    font-family: 'Lora', serif;
+    font-size: 18px;
+}
+.image_star{
+width: 80px;
+height: 40px;
+margin: 15px auto 15px 602px;
+}   
+.image_vision1{
+    width: 80px;
+height: 66px;
+    margin: 5px 0px 5px 270px;
+}
+.image_teame{
+      width: 88px;
+    height: 95px;
+    margin: 5px 0px 5px 95px;
+        
+}
+.image_star_teame{
+       width: 67px;
+    height: 30px;
+    margin: 5px 0px 5px 105px;
+}
+
+.body_for_about_us{
+        background-color: white !important; 
+}
+
+.text3{
+      width: 0px !important;
+    height: 83px !important;
+    font-size: 10px;
+    flex: 0px;
+    flex: 15px 17px 23px;
+    margin: 5px 170px 10px 16px;
+    background-color: white;
+}
+.row{
+        display: flex;
+    flex-wrap: wrap;
+    margin: 5px 0px 5px 206px;
+}
+
    .validation-error{
     color:red;
   }
  
+
 
   .design{
     height: 250px;

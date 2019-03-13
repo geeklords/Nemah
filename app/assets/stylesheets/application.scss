@@ -102,7 +102,7 @@ h1{
 .mini-footer {
     background: #2B412C;
     padding:15px 0;
-    position: fixed;
+
     left: 0;
     bottom: 0;
     width: 100%;
@@ -148,7 +148,7 @@ h1{
 }
 
 .image_about_us{
-    width: 1279px;
+   width: 1022px;
     height: 740px;
 }
 
@@ -170,7 +170,7 @@ h1{
     background-color: white;
     text-align: center;
     font-size: 14px;
-    margin: 5px 378px 5px 378px;
+    margin:5px 260px 5px 304px;
     font-family: 'Lora', serif;
 }
 .text_OurTeam{
@@ -180,25 +180,24 @@ h1{
     font-size: 18px;
 }
 .image_star{
-width: 80px;
-height: 40px;
-margin: 15px auto 15px 602px;
+       width: 80px;
+    height: 40px;
+    margin: 105px auto 15px 469px;
 }   
 .image_vision1{
-    width: 80px;
-height: 66px;
-    margin: 5px 0px 5px 270px;
+      width: 80px;
+    height: 66px;
+    margin: 5px 0px 5px 210px;
 }
 .image_teame{
-      width: 88px;
-    height: 95px;
-    margin: 5px 0px 5px 95px;
-        
+        width: 72px;
+    height: 72px;
+    margin: 5px 0px  11px 33px;
 }
 .image_star_teame{
-       width: 67px;
-    height: 30px;
-    margin: 5px 0px 5px 105px;
+    width: 73px;
+    height: 45px;
+    margin: 0px 0px 0px 110px;
 }
 
 .body_for_about_us{
@@ -206,20 +205,35 @@ height: 66px;
 }
 
 .text3{
-      width: 0px !important;
+       width: 0px !important;
     height: 83px !important;
     font-size: 10px;
     flex: 0px;
     flex: 15px 17px 23px;
-    margin: 5px 170px 10px 16px;
+    margin: 5px 120px 5px 0px;
     background-color: white;
+
 }
-.row{
-        display: flex;
+
+.radius-post{
+border-radius: 20px;
+}
+
+.row_posts{
+    display: flex;
+    flex-wrap: wrap;
+    width: 723px;
+    padding-top: 14px;
+    padding-bottom: 39px;
+    /* text-align: center; */
+    margin: 5px 0px 5px 127px;
+}
+
+.pagraph_text{
+      display: flex;
     flex-wrap: wrap;
     margin: 5px 0px 5px 206px;
 }
-
    .validation-error{
     color:red;
   }
@@ -262,6 +276,7 @@ height: 66px;
     }
     &:hover {
       border: 1px solid #fff;
+      background: rgba($color: #2b412c, $alpha: 0.5);
       
       &:before {
               box-shadow: 0 15px 10px -10px rgba(31, 31, 31, 0.5);

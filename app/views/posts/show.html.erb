@@ -1,8 +1,10 @@
-<p id="notice"><%= notice %></p>
+
 
 <div class="wrapper">
    <div class="container mycontainer">
+   
       <div class="form"> 
+      <p class="alert alert-success"><%= notice %></p>
         <p>
           <strong>Title:</strong>
           <%= @post.title %>
@@ -21,5 +23,5 @@
         <%= link_to 'Edit', edit_post_path(@post), class: "btn btn-outline-secondary" %>
         <%= link_to 'Back', posts_path,class:"btn btn-outline-success" %>
  </div>
-    </div>
-      </div>
+        </div>
+          </div>

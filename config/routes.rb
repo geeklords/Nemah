@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
   resources :posts
+  resources :reservations
   devise_for :users
 
   get "/aboutus", to: "about#index", as: "about_us"

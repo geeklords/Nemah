@@ -1,7 +1,7 @@
 <%= form_with(model: post, local: true) do |form| %>
   <% if post.errors.any? %>
     <div id="error">
-      <h2><%= pluralize(post.errors.count, "error") %>, Post can't be saved </h2>
+      <% pluralize(post.errors.count, "error") %>
   <% end %>
   <div class="wrapper">
    <div class="container mycontainer">
@@ -13,7 +13,7 @@
       <br>
       <div class="form-group">
        <%= form.label :title %>
-       <%= form.text_field :title ,:class => "form-control"%>
+       <%= form.text_field :title ,:class => "form-control", placeholder: "Who are you?"%>
      </div>
       <div class="form-group">
        <%= form.label :type_of_food %>
@@ -25,13 +25,12 @@
        </div>
        <div class="form-group">
           <%= form.label :description %>
-          <%= form.text_area :description, class: "form-control" %>
+          <%= form.text_area :description, class: "form-control", placeholder: "Details about your food"%>
       </div>
       <div class="actions">
         <%= link_to 'Back', posts_path, class: "btn btn-outline-secondary" %>
-        <%= form.submit "Save", data: { confirm: 'You Added A Post' },class: "btn btn-outline-success"%>
-     </div>
-
+        <%= form.submit "Save",class: "btn btn-outline-success"%>
+      </div>
 <% end %>
   </div>
     </div>

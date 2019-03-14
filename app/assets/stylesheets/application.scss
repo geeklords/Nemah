@@ -148,7 +148,7 @@ h1{
 }
 
 .image_about_us{
-   width: 1022px;
+    width: 1166px;
     height: 740px;
 }
 
@@ -182,17 +182,17 @@ h1{
 .image_star{
        width: 80px;
     height: 40px;
-    margin: 105px auto 15px 469px;
+    margin: 5px auto 15px 540px;
 }   
 .image_vision1{
       width: 80px;
     height: 66px;
-    margin: 5px 0px 5px 210px;
+    margin: 5px 0px 5px 231px;
 }
 .image_teame{
         width: 72px;
     height: 72px;
-    margin: 5px 0px  11px 33px;
+    margin: 5px 0px  11px 66px;
 }
 .image_star_teame{
     width: 73px;
@@ -276,7 +276,7 @@ border-radius: 20px;
     }
     &:hover {
       border: 1px solid #fff;
-      background: rgba($color: #2b412c, $alpha: 0.5);
+      background: rgba($color: #a0c29c, $alpha: 0.5);
       
       &:before {
               box-shadow: 0 15px 10px -10px rgba(31, 31, 31, 0.5);

@@ -17,12 +17,17 @@
                   <h6 class="card-title text-muted">Name: <%= user_name.name %></h6>
                   <p class="card-text p-y-1"><%= post.description %></p>
                   <%= link_to 'Show', post, class: "card-link" %>
-
-
-                  <% if current_user.id == post.user_id%>
-                  <%= link_to 'Destroy', post, method: :delete, data: { confirm: 'Are you sure?' } , class: "card-link" %>
-
+                   <%= link_to 'Edit', edit_post_path(post), class: "card-link" %>                  
+                  <% if current_user%>
+                    <% if current_user.id == post.user_id%>
+                    <%= link_to 'Destroy', post, method: :delete, data: { confirm: 'Are you sure?' } , class: "card-link" %>
+                    <% else %>
+                    <% link_to posts_path%>
+                    <% end %>
+                  <% else %>
+                  <%= link_to posts_path%>
                   <% end %>
+
                 
 
 
